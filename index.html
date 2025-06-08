@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container{
+            text-align: center;
+            background: white ;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid rgb(142, 193, 225);
+            border-radius: 3px;
+        }
+        .button:hover{
+            padding: 10px 20px;
+            border: 0.5px solid blue;
+            border-radius: 4px;
+            color: white;
+            background-color: rgb(24, 86, 186);
+            cursor: pointer;  
+            background-color: cornflowerblue;
+        }
+        .button {
+            padding: 10px 20px;
+            border: 0.5px solid blue;
+            border-radius: 4px;
+            color: white;
+            background-color: rgb(24, 86, 186);
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p> Enter a number between 1 and 5</p>
+        <input type="text" id="number" placeholder="Enter the guessed number">
+        <input type="button" id="submit" value="Guess" onclick="clickAction()" class="button button:hover" ></button>
+        <h1 id="result"></h1>
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHljemVpdWJ1eGNzdnlzcWx1NTEwMWR4eWl3enp4OWxranZwcGk2OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dyYOjf4hSYLuFPt4lm/giphy.gif" id="image" style="display: none;">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
