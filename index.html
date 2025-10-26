@@ -11,7 +11,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: rgba(0, 0, 0, 0.95);
             margin: 0;
         }
         .container{
@@ -19,6 +19,12 @@
             background: white ;
             padding: 20px;
             border-radius: 8px;
+            background: linear-gradient(rgba(17, 54, 147, 0.77), transparent 75%);
+        }
+        .ttl{
+            color: aliceblue;
+            padding-top: 20px;
+            padding-bottom: 10px;
         }
         input[type="text"] {
             width: 200px;
@@ -48,10 +54,11 @@
 </head>
 <body>
     <div class="container">
-        <p> Enter a number between 1 and 5</p>
+        <h1 class="ttl">Guess The Correct Number</h1>
+        <p style="color: aliceblue;"> Enter a number between 1 and 10</p>
         <input type="text" id="number" placeholder="Enter the guessed number">
         <input type="button" id="submit" value="Guess" onclick="clickAction()" class="button button:hover" ></button>
-        <h1 id="result"></h1>
+        <h1 id="result" style="color: aliceblue;"></h1>
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHljemVpdWJ1eGNzdnlzcWx1NTEwMWR4eWl3enp4OWxranZwcGk2OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dyYOjf4hSYLuFPt4lm/giphy.gif" id="image" style="display: none;">
     </div>
 
